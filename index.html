@@ -8,39 +8,41 @@
 		<title>Masuo | 世界一のショッピングサイト</title>
 		<meta name="keywords" content="Masuo,マスオ,通販,インターネットショッピング">
 		<meta name="description" content="Masuo.com　公式サイト。お急ぎ便には対応していない不便な通販サイトです。通常配送料1万円（一部を除く）。">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="image/favicon.ico" >
 		<link rel="stylesheet" href="swiper.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/0.3.1/flickity.min.css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="swiper.min.js"></script>
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-		<script src="index.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/0.3.1/flickity.pkgd.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="inner">
-			<img class="top" src="https://dummyimage.com/980x70/000/fff" alt="980x70の画像">
-			</div>
-			<section class="heading">
-				<p>こどもから大人まで楽しめるxxxx公式ショッピングサイト!!</p>
-			</section>
-			<div class="wrap">
-				<img class="clearfix logo" src="https://dummyimage.com/195x35/000/fff" alt="195x35の画像">
-				<section class="menu">
-					<ul class="border text-deco-none">
+			<img  class="hero" src="https://dummyimage.com/980x70/000/fff" alt="980x70の画像">
+			<h1 class="heading">こどもから大人まで楽しめるxxxx公式ショッピングサイト!!</h1>
+			<section class="menu">
+				<ul class="user text-deco-none">
+					<li><a href="#">ログイン</a></li>
+					<li><a href="#">会員登録</a></li>
+					<li><a href="#">カート</a></li>
+				</ul>
+				<div class="wrap">
+					<ul class="header-top text-deco-none">
+						<li><img src="https://dummyimage.com/195x35/000/fff" alt="195x35の画像"></li>
 						<li><a href="#">初めての方へ<br>ご利用ガイド</a></li>
 						<li><a href="#">よくある質問</a></li>
 						<li><a href="#">閲覧履歴</a></li>
 						<li><a href="#">公式アプリ</a></li>
-						<span class="text">こんにちはゲストさん！</span>
+					<span class="text">こんにちはゲストさん！</span>
 					</ul>
-					<ul class="text-deco-none user">
-						<li><a href="#">ログイン</a></li>
-						<li><a href="#">会員登録</a></li>
-						<li><a href="#">カート</a></li>
-					</ul>
-				</section>
-				<div class="clearfix">
-					<ul class="list text-deco-none">
+					<ul class="menu-bottom text-deco-none">
 						<li><a href="#">キャラクターから探す</a></li>
 						<li><a href="#">ショップから探す</a></li>
 						<li><a href="#">商品ジャンルから探す</a></li>
@@ -48,256 +50,486 @@
 						<li><a href="#">ポイントを貯める</a></li>
 					</ul>
 					<form class="form">
-						<input class="ta" type="text" name="text">
-						<input class="search" type="submit" name="submit" value="検索">
+						<input class="text-box" type="text" name="text">
+						<input class="submit" type="submit" name="submit" value="検索">
 					</form>
 				</div>
-			</div>
-			<section class="contact">
-				<ul class="contact2 text-deco-none">
+			</section>
+			<div class="contact-outer">
+				<ul class="contact-innner text-deco-none">
 					<li><a href="#">配送に関するご連絡</a></li>
 					<li><a href="#">携帯電話で接続に関するご連絡</a></li>
 				</ul>
-			</section>
-		</header>
-		<main>
-			<div class="wrap">
-				<section class="swiper-top">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<ul class="swiper-item swiper-slide">
-								<li>
-									<img src="https://dummyimage.com/440x250/000/fff" alt="440x250の画像">
-								</li>
-								<li>
-									<ul class="swiper-item-s">
-										<div class="aa">
-										<li>
-											<img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
-										</li>
-										<li>
-											<img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
-										</li>
-									</div>
-										<li>
-											<img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
-										</li>
-										<li>
-											<img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
-										</li>
-									</ul>
-<!-- 									<ul class="swiper-item-s">
-										<div class="aa">
-										<li>
-											<img src="image/212x120.png" alt="212x120の画像">
-										</li>
-										<li>
-											<img src="image/212x120.png" alt="212x120の画像">
-										</li>
-									</div>
-										<li>
-											<img src="image/212x120.png" alt="212x120の画像">
-										</li>
-										<li>
-											<img src="image/212x120.png" alt="212x120の画像">
-										</li>
-									</ul> -->
-								</li>
-							</ul>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="button-prev"></div>
-						<div class="button-next"></div>
-						<div class="scrollbar"></div>
-					</div>
-				</section>
-				<section class="new">
-					<div class="new-pro">
-						<span class="title1">■　新着商品</span>
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<ul class="pro-list1">
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-									<li>
-										<span class="sub-ti1">5月28日発売 受注開始</span>
-										<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-										<span class="pro-name">商品名が入ります</span>
-									</li>
-								</ul>
-							</div>
-							<div class="swiper-pagination"></div>
-							<div class="button-prev"></div>
-							<div class="button-next"></div>
-							<div class="swiper-scrollbar"></div>
-						</div>
-					</div>
-					<span class="sign-red list-link">その他の新着商品一覧</span>
-				</section>
-				<section class="product">
-					<span class="title2">■　あなたへのおすすめ商品</span>
-					<ul class="pro-list2">
-						<li>
-							<span class="sub-ti2">5月28日発売 受注開始</span>
-							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-							<span class="pro-name">商品名が入ります</span>
-						</li>
-						<li>
-							<span class="sub-ti2">5月28日発売 受注開始</span>
-							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-							<span class="pro-name">商品名が入ります</span>
-						</li>
-						<li>
-							<span class="sub-ti2">5月28日発売 受注開始</span>
-							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-							<span class="pro-name">商品名が入ります</span>
-						</li>
-						<li>
-							<span class="sub-ti2">5月28日発売 受注開始</span>
-							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-							<span class="pro-name">商品名が入ります</span>
-						</li>
-						<li>
-							<span class="sub-ti2">5月28日発売 受注開始</span>
-							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
-							<span class="pro-name">商品名が入ります</span>
-						</li>
-					</ul>
-				</section>
-				<section class="shoplist">
-					<span class="title3">■　ショップ一覧</span>
-					<ul class="category">
-						<li>
-							<ul class="c-sub">
-								<li><span class="seco-cate">カテゴリーが入ります</span></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="c-sub">
-								<li><span class="seco-cate">カテゴリーが入ります</span></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="c-sub">
-								<li><span class="seco-cate">カテゴリーが入ります</span></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-								<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="news">
-						<span class="title4">■　ニュースリリース</span>
-						<ul class="post">
-							<li>
-							<span class="time"><time datetime="2017-05-28">2017年5月28日</time></span>
-							<a class="text-deco-none article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
-							</li>
-							<li><span class="time"><time datetime="2017-05-28">2017年5月28日</time></span>
-							<a class="text-deco-none article" href="#">！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！</a></li>
-							<li><span class="time"><time datetime="2017-05-08">2017年5月8日</time></span>
-							<a class="text-deco-none article" href="#">一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇</a></li>
-							<li><span class="time"><time datetime="2017-05-02">2017年5月2日</time></span>
-							<a class="text-deco-none article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a></li>
-					</ul>
-				</section>
 			</div>
-		</main>
-		<footer>
-			<div class="footer-top">
-				<div class="wrap">
-					<ul class="footer-main">
-						<li>
-							<ul class="footer-left">
-								<li><img src="https://dummyimage.com/195x35/000/fff" alt="195x35の画像"></li>
-								<li><p class="catch">こどもから大人まで楽しめる<br>xxxxx公式ショッピングサイト!!</p></li>
-								<li><a class="text-deco-none sign-gray" href="#">トップに戻る</a></li>
-								<li><p>&copy;会社名が入ります</p></li>
-							</ul>
-						</li>
-						<li>
+			<div class="navigate">
+				<div class="res-header">
+					<a href="#"><img class="res-logo" src="https://dummyimage.com/195x35/000/fff" alt="195x35の画像"></a>
+					<a href="#"><i class="fas fa-user"><p class="res-icon-text">ログイン</p></i></a>
+					<a href="#"><i class="fas fa-edit"><p class="res-icon-text">会員登録</p></i></a>
+					<a href="#"><i class="fas fa-shopping-cart"><p class="res-icon-text">カート</p></i></a>
+					<div class="container">
+						<nav class="globalMenuSp">
 							<ul>
-								<li><p class="footer-title">会社情報</p></li>
+								<li><a href="#"></a></li>
+								<li><a href="#">初めての方へご利用ガイド</a></li>
+								<li><a href="#">よくあるご質問</a></li>
+								<li><a href="#">閲覧履歴</a></li>
+								<li><a href="#">公式アプリ</a></li>
+								<li><a href="#">ポイントを貯める</a></li>
+								<li><a href="#">配達に関するご連絡</a></li>
+								<li><a href="#">携帯電話での接続に関する連絡</a></li>
 								<li>
-									<ul class="footer-info">
-										<li><a class="text-deco-none" href="#">会社概要</a></li>
-										<li><a class="text-deco-none" href="#">ウェブサイトご利用条件</a></li>
-										<li><a class="text-deco-none" href="#">個人情報保護方針</a></li>
-										<li><a class="text-deco-none" href="#">特定商取引法の表示</a></li>
-										<li><a class="text-deco-none" href="#">著作権</a></li>
-										<li><a class="text-deco-none" href="#">採用情報</a></li>
-									</ul>
+									<input class="text-box" type="text" name="text">
+									<input class="submit" type="submit" name="submit" value="検索">
+									<div class="res-search">
+										<a href="#">キャラクターから探す</a>
+										<a href="#">ショップから探す</a>
+										<a href="#">商品ジャンルから探す</a>
+										<a href="#">特集から探す</a>
+									</div>
 								</li>
 							</ul>
-						</li>
-						<li>
-							<ul class="border-left sub">
-								<li><span class="footer-title">会員サービス</span></li>
-								<li><a class="text-deco-none" href="#">メルマガ登録</a></li>
-								<li><a class="text-deco-none" href="#">会員規約</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="border-left sub">
-								<li><span class="footer-title">ガイド</span></li>
-								<li><a class="text-deco-none" href="#">よくある質問</a></li>
-								<li><a class="text-deco-none" href="#">ガイド</a></li>
-								<li><a class="text-deco-none" href="#">安全ガイド</a></li>
-								<li><a class="text-deco-none" href="#">営業日カレンダーについて</a></li>
-								<li><a class="text-deco-none" href="#">お問い合わせ</a></li>
-								<li><a class="text-deco-none" href="#">サイトマップ</a></li>
-							</ul>
-						</li>
-					</ul>
+						</nav>
+					</div>
+					<div class="navToggle">
+						<span></span><span></span><span></span><span class="res-text-menu">メニュー</span>
+					</div>
 				</div>
 			</div>
+		</header>
+		<main>
+			<section class="top wrap">
+				<div class="swiper-container swiper1">
+				    <div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="margin-left6px" src="https://dummyimage.com/440x250/000/fff" alt="440x250の画像">
+	            			<ul class="slide-list">
+								<li><img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像"></li>
+								<li><img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像"></li>
+								<li><img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像"></li>
+								<li><img src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像"></li>
+							</ul>
+	 					</div>
+				    </div>	
+					<div class="swiper-button-prev swiper-button-prev1"></div>
+					<div class="swiper-button-prev swiper-button-next1"></div>
+				</div>
+			</section>
+			<div class="res-top">
+				<h1 class="res-heading">こどもから大人まで楽しめるxxxx公式ショッピングサイト!!</h1>
+				<div class="swiper-container swiper1">
+				    <div class="swiper-wrapper">
+						<div class="swiper-slide slide1">
+							<img class="img440" src="https://dummyimage.com/440x250/000/fff" alt="440x250の画像">
+						</div>
+						<div class="swiper-slide slide1">
+							<img class="img212" src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
+						</div>
+						<div class="swiper-slide slide1">
+							<img class="img212" src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
+						</div>
+						<div class="swiper-slide slide1">
+							<img class="img212" src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
+						</div>
+						<div class="swiper-slide slide1">
+							<img class="img212" src="https://dummyimage.com/212x120/000/fff" alt="212x120の画像">
+						</div>
+					</div>
+					<div class="swiper-button-prev swiper-button-prev1"></div>
+					<div class="swiper-button-prev swiper-button-next1"></div>
+				</div>
+			</div>
+			<section class="new-product wrap">
+				<h2 class="title">新着商品</h2>
+				<div class="swiper-container  swiper3">
+			    	<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<ul class="new-list text-deco-none">
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+								<li><a href="#">
+									<span class="sub-title">5月28日発売 受注開始</span>
+									<img class="padding-top3" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+									<span class="product-name">商品名が入ります</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper-button-prev swiper-button-prev3"></div>
+					<div class="swiper-button-prev swiper-button-next3"></div>
+				</div>	
+				<a class="sign-red list-link" href="#">その他の新着商品一覧</a>
+			</section>
+			<div class="res-new-product">
+				<h2 class="res-title">新着商品</h2>
+				<div class="swiper-container swiper4">
+					<div class="swiper-wrapper">
+		  				<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<section class="recommend-product wrap">
+				<h2 class="title">あなたへのおすすめ商品</h2>
+				<ul class="recommend-list text-deco-none">
+					<li><a href="#">
+						<span class="sub-ti2">5月28日発売 受注開始</span>
+						<img class="margin-top6" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+						<span class="product-name">商品名が入ります</span>
+					</li></a>
+					<li><a href="#">
+						<span class="sub-ti2">5月28日発売 受注開始</span>
+						<img  class="margin-top6" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+						<span class="product-name">商品名が入ります</span>
+					</li></a>
+					<li><a href="#">
+						<span class="sub-ti2">5月28日発売 受注開始</span>
+						<img class="margin-top6" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+						<span class="product-name">商品名が入ります</span>
+					</li></a>
+					<li><a href="#">
+						<span class="sub-ti2">5月28日発売 受注開始</span>
+						<img class="margin-top6" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+						<span class="product-name">商品名が入ります</span>
+					</li></a>
+					<li><a href="#">
+						<span class="sub-ti2">5月28日発売 受注開始</span>
+						<img class="margin-top6" src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+						<span class="product-name">商品名が入ります</span>
+					</li></a>
+				</ul>
+			</section>
+			<div class="res-new-product">
+				<h2 class="res-title">あなたへのおすすめ商品</h2>
+				<div class="swiper-container swiper4">
+					<div class="swiper-wrapper">
+		  				<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+						<div class="swiper-slide slide4">
+							<a class="res-product-list" href="#">
+							<span class="res-sub-title">5月28日発売 受注開始</span>
+							<img src="https://dummyimage.com/150x150/000/fff" alt="150x150の画像">
+							<span class="res-product-name">商品名が入ります</span>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<section class="shoplist wrap">
+				<h2 class="title">ショップ一覧</h2>
+				<ul class="category">
+					<li>
+						<ul class="categoly-list">
+							<li><span class="category-title">カテゴリーが入ります</span></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="categoly-list">
+							<li><span class="category-title">カテゴリーが入ります</span></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="categoly-list">
+							<li><span class="category-title">カテゴリーが入ります</span></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+							<li><a class="text-deco-none" href="#">サブカテゴリーが入ります</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<div class="res-contents">
+				<h2 class="res-title">ショップ一覧</h2>
+					<p class="switch">カテゴリーが入ります</p>
+					<div class="res-sub-category">
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+					</div>
+					<p class="switch">カテゴリーが入ります</p>
+					<div class="res-sub-category">
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+					</div>
+					<p class="switch">カテゴリーが入ります</p>
+					<div class="res-sub-category">
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+						<a href="#">サブカテゴリーが入ります</a>
+					</div>
+			</div>
+			<section class="news wrap">
+				<h2 class="title">ニュースリリース</h2>
+				<ul class="post">
+					<li>
+						<span class="time"><time datetime="2017-05-28">2017年5月28日</time></span>
+						<a class="article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
+					</li>
+					<li>
+						<span class="time"><time datetime="2017-05-28">2017年5月28日</time></span>
+						<a class="article" href="#">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a>
+					</li>
+					<li>
+						<span class="time"><time datetime="2017-05-08">2017年5月8日</time></span>
+						<a class="article" href="#">一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇</a>
+					</li>
+					<li>
+						<span class="time"><time datetime="2017-05-02">2017年5月2日</time></span>
+						<a class="article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
+					</li>
+				</ul>
+			</section>
+			<div class="res-contents">
+				<h2 class="res-title">ニュースリリース</h2>
+				<ul class="res-post text-deco-none">
+					<li>
+						<span class="res-time"><time datetime="2017-05-28">2017年5月28日</time></span>
+						<a href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
+					</li>
+					<li>
+						<span class="res-time"><time datetime="2017-05-28">2017年5月28日</time></span>
+						<a href="#">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a>
+					</li>
+					<li>
+						<span class="res-time"><time datetime="2017-05-08">2017年5月8日</time></span>
+						<a href="#">一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇一二三四五六七八九〇</a>
+					</li>
+					<li>
+						<span class="res-time"><time datetime="2017-05-02">2017年5月2日</time></span>
+						<a href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
+					</li>
+				</ul>
+			</div>
+		</main>	
+		<footer>
+			<div class="pagetop">
+				<a href="#">トップに戻る</a>
+			</div>
+			<section class="footer-menu wrap">
+				<div class="wrap">
+					<div class="footer-inner">
+						<div class="footer-left">
+							<img src="https://dummyimage.com/195x35/000/fff" alt="195x35の画像">
+							<h3 class="catch">こどもから大人まで楽しめる<br>xxxxx公式ショッピングサイト!!</h3>
+							<a class="sign-gray back2top" href="#">トップに戻る</a>
+							<span class="copyright">&copy;会社名が入ります</span>
+						</div>
+						<div class="footer-list">
+							<ul class="text-deco-none">
+								<li><h3 class="footer-title">会社情報</h3></li>
+								<li><a href="#">会社概要</a></li>
+								<li><a href="#">ウェブサイトご利用条件</a></li>
+								<li><a href="#">個人情報保護方針</a></li>
+								<li><a href="#">特定商取引法の表示</a></li>
+								<li><a href="#">著作権</a></li>
+								<li><a href="#">採用情報</a></li>
+							</ul>
+							<ul class="footer-border text-deco-none">
+								<li><h3 class="footer-title">会員サービス</h3></li>
+								<li><a href="#">メルマガ登録</a></li>
+								<li><a href="#">会員規約</a></li>
+							</ul>
+							<ul class="footer-border text-deco-none">
+								<li><h3 class="footer-title">ガイド</h3></li>
+								<li><a href="#">よくある質問</a></li>
+								<li><a href="#">ガイド</a></li>
+								<li><a href="#">安全ガイド</a></li>
+								<li><a href="#">営業日カレンダーについて</a></li>
+								<li><a href="#">お問い合わせ</a></li>
+								<li><a href="#">サイトマップ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="res-menu">
+				<div class="footer-accordion">
+					<p class="footer-switch">会社情報</p>
+					<div class="footer-contentWrap displayNone">
+						<a href="#">会社概要</a>
+						<a href="#">ウェブサイトご利用条件</a>
+						<a href="#">個人情報保護方針</a>
+						<a href="#">特定商取引法の表示</a>
+						<a href="#">著作権</a>
+						<a href="#">採用情報</a>
+					</div>
+					<p class="footer-switch">会員サービス</p>
+					<div class="footer-contentWrap displayNone">
+						<a href="#">メルマガ登録</a>
+						<a href="#">会員規約</a>
+					</div>
+					<p class="footer-switch">ガイド</p>
+					<div class="footer-contentWrap displayNone">
+						<a href="#">よくある質問</a>
+						<a href="#">ガイド</a>
+						<a href="#">安全ガイド</a>
+						<a href="#">営業日カレンダーについて</a>
+						<a href="#">お問い合わせ</a>
+						<a href="#">サイトマップ</a>
+					</div>
+				</div>
+			</div>
+			<p class="res-copyright">&copy; 会社名が入ります</p>
 		</footer>
-	</body>
+		<script>
+		    var swiper = new Swiper('.swiper1', {
+		      slidesPerView: 1,
+		      spaceBetween: 30,
+		      loop: true,
+		      navigation: {
+		        nextEl: '.swiper-button-next1',
+		        prevEl: '.swiper-button-prev1',
+		      },
+		    });
+			</script>
+	  	<script>
+		    var swiper = new Swiper('.swiper3', {
+		      slidesPerView: 1,
+		      spaceBetween: 30,
+		      loop: true,
+		      navigation: {
+		        nextEl: '.swiper-button-next3',
+		        prevEl: '.swiper-button-prev3',
+		      },
+		    });
+	  	</script>
+	  	  <script>
+			var swiper = new Swiper('.swiper4', {
+				loop: true,
+				pagination: {
+			    el: '.swiper-pagination',
+			  },
+			direction: 'horizontal',
+			slidesPerView: 5,
+			spaceBetween: 60,
+			watchSlidesVisibility: true,
+			breakpoints: {
+			  880: {
+			    slidesPerView: 5,
+			    spaceBetween: 1,
+			  },
+			  790: {
+			    slidesPerView: 4,
+			    spaceBetween: 1,
+			  },
+			  660: {
+			    slidesPerView: 3,
+			    spaceBetween: 1,
+			  },
+			  480: {
+			    slidesPerView: 2,
+			    spaceBetween: 1,
+			  },
+			}
+			});
+  </script>
+ 	</body>
 </html>

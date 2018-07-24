@@ -1,8 +1,9 @@
+// トップスライダー
 var mySwiper = new Swiper ('.swiper-container', {
     // オプションパラメータ(一部のみ抜粋)
     loop: true, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
     speed: 600, // スライドが切り替わるトランジション時間(ミリ秒)。
-    slidesPerView: 1, // 何枚のスライドを表示するか
+    slidesPerView: 4, // 何枚のスライドを表示するか
     spaceBetween: 10, // スライド間の余白サイズ(ピクセル)
     direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
     effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
@@ -29,19 +30,55 @@ var mySwiper = new Swiper ('.swiper-container', {
       }
     },
  
-    // ページネーションを表示する場合
-    pagination: {
-      el: '.swiper-pagination',　 // ページネーションを表示するセレクタ
-    },
- 
     // 前後スライドへのナビゲーションを表示する場合
     navigation: {
       nextEl: '.swiper-button-next', // 次のスライドボタンのセレクタ
       prevEl: '.swiper-button-prev', // 前のスライドボタンのセレクタ
     },
  
-    // スクロールバーを表示する場合
-    scrollbar: {
-      el: '.swiper-scrollbar', // スクロールバーを表示するセレクタ
-    }
   });
+
+// レスポンシブ　ヘッダーメニュー
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+
+
+// レスポンシブ　おすすめ商品スライダー
+jQuery(function($){
+  $('#main-image-gallery').flickity({
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    autoplay: true
+
+  });
+});
+
+
+
+// フッタープルダウンメニュー
+(function($) {
+$(function() {
+$(".footer-accordion").each(function() {
+var accordion = $(this);
+$(this).find(".footer-switch").click(function() {
+var targetContentWrap = $(this).next(".footer-contentWrap");
+if ( targetContentWrap.css("display") === "none" ) {
+accordion.find(".footer-contentWrap").slideUp();
+accordion.find(".footer-switch.open").removeClass("open");
+}
+targetContentWrap.slideToggle();
+$(this).toggleClass("open");
+});
+});
+
+});
+})(jQuery);
