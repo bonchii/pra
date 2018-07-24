@@ -369,7 +369,11 @@
 			<section class="news wrap">
 				<h2 class="title">ニュースリリース</h2>
 				<ul class="post">
-					<li>
+					<li id="article_template" style="display: none;">
+						<span class="time"><time datetime="{DATE}">{DATE_TXT}</time></span>
+						<a class="article" href="{LINK}">{ARTICLE_TXT}</a>
+					</li>
+					<!-- <li>
 						<span class="time"><time datetime="2017-05-28">2017年5月28日</time></span>
 						<a class="article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
 					</li>
@@ -384,13 +388,17 @@
 					<li>
 						<span class="time"><time datetime="2017-05-02">2017年5月2日</time></span>
 						<a class="article" href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
-					</li>
+					</li> -->
 				</ul>
 			</section>
 			<div class="res-contents">
 				<h2 class="res-title">ニュースリリース</h2>
 				<ul class="res-post text-deco-none">
-					<li>
+					<li id="res_article_template" style="display: none;">
+						<span class="res-time"><time datetime="{DATE}">{DATE_TXT}</time></span>
+						<a class="res-article" href="{LINK}">{ARTICLE_TXT}</a>
+					</li>
+					<!-- <li>
 						<span class="res-time"><time datetime="2017-05-28">2017年5月28日</time></span>
 						<a href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
 					</li>
@@ -404,10 +412,43 @@
 					</li>
 					<li>
 						<span class="res-time"><time datetime="2017-05-02">2017年5月2日</time></span>
-						<a href="#">AyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAyAy</a>
-					</li>
+						<a class="article" href="#"></a>
+					</li> -->
 				</ul>
 			</div>
+			<script>
+			$.ajax({ // json読み込み開始
+			type: 'GET',
+			url: 'news_article.json',
+			dataType: 'json'
+			})
+			.then(
+			function(json) {
+				// TODO check whether the JSON is actually an array!
+				for (var i = 0; i < json.length; i++)
+				{
+					var article = $('#article_template').clone();
+					article.html(
+						article.html()
+						.replace('{DATE_TXT}', json[i].date)
+						.replace('{LINK}', json[i].link)
+						.replace('{ARTICLE_TXT}', json[i].article)
+					);
+					console.log(article.show().html());
+					$(".news.wrap .post").append(article);
+					
+					var article = $('#res_article_template').clone();
+					article.html(
+						article.html()
+						.replace('{DATE_TXT}', json[i].date)
+						.replace('{LINK}', json[i].link)
+						.replace('{ARTICLE_TXT}', json[i].article)
+					);
+					console.log(article.show().html());
+					$(".res-contents .res-post").append(article);
+				}
+			});
+		</script>
 		</main>	
 		<footer>
 			<div class="pagetop">
