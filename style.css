@@ -22,7 +22,6 @@ a.text-deco-none{
   text-decoration: none;
 }
 
-
 .hero{
   display: flex;
   width: 980px;
@@ -30,6 +29,7 @@ a.text-deco-none{
   height: auto;
   margin: 0 auto;
   z-index: 100;
+  position: relative;
 }
 
 .heading{
